@@ -1,0 +1,41 @@
+body {
+    font-family:'Lucida Sans';
+    box-sizing: border-box;
+}
+
+
+main {
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #263b7b;
+}
+
+h1 {
+    color: white;
+}
+
+.control-panel {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.led {
+    width: 5rem;
+}
+
+.led.on > circle {
+    fill: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .control-panel {
+        flex-direction: column;
+    }
+  }
+
